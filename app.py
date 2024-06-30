@@ -43,7 +43,7 @@ def update_task(id):
             task = t
             break
 
-    if task == None:
+    if task is None:
         return jsonify({"message": "Unable to find activity"}), 404
 
     data = request.get_json()
